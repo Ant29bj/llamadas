@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql
+    container_name: llamadas_db
+    restart: no
+    ports:
+      - "3306:3306"
+    environment:
+        MYSQL_DATABASE: llamadas
+        MYSQL_ROOT_PASSWORD: root
